@@ -26,9 +26,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head> 
 
-
 <body <?php body_class(); ?>>
+<!-- header -->	
    <header>
+<!-- topbar -->	
       <div id="topbar">
          <div class="container12">
             <div class="column3">
@@ -46,11 +47,11 @@
                </ul>
             </div>
          </div>
-      </div>    <!-- topbar end -->
+      </div>    
    
       <div class="wrap container12">
          <div id="logo" class="column6">
-            <a href="<?php echo home_url(); ?>" ><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.jpg" width="" height="" alt="" /></a>
+            <a href="<?php echo home_url(); ?>" ><img src="<?php bloginfo( 'template_url' ); ?>/images/logo.jpg" width="" height="" alt="company logo" /></a>
          </div>
          <div class="column6">
             <p id="phone">Contact Details</p>
@@ -58,8 +59,9 @@
       </div>    
    </header>
 
-   <div id="nav" class="container12">    
-      <?php wp_nav_menu( array( 'theme_location' => 'topnav' ) ); ?>
-   </div>
+<!-- main navigation -->
+   <nav class="column12" id="nav" role="navigation"> 
+		<?php wp_nav_menu( array('theme_location' => 'topnav')); ?>
+	</nav>
    
    <div class="wrap container12"> <!-- content wrap begins -->
