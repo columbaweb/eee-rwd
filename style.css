@@ -60,7 +60,7 @@ a:hover,a:active,a:focus{color:#666;}
 
 
 /************** TOP BAR ****************/
-#topbar{font-size:13px;color:#666;background:#aaa;}
+#topbar{font-size:.9em;color:#666;background:#aaa;}
    #topbar a.column3{padding:10px 0 0 0;}
    #topbar a,#topbar a:link,#topbar a:visited{color:#A2A2A2;}
    #topbar a:hover,#topbar a:active,#topbar a:focus{color:#fff;}
@@ -101,7 +101,7 @@ nav .menu {clear: both; margin: 0; padding: 0; background: #FBFAFC; border-top: 
 	nav .menu a:hover, nav .menu a:active, nav .menu a:focus { color:#666; }
 	nav .menu .current_page_item a, nav .menu .current-menu-item a { font-weight:bold; }
 	nav .menu li li { width: auto; margin: -1px 0 1px 0; color: #444; background: #f2f2f2; border: 1px solid #e5e5e5;}
-	nav .menu li li a { font-size: 12px; padding: 5px 8px; color: #444;}
+	nav .menu li li a { font-size: .9em; padding: 5px 8px; color: #444;}
 	nav .menu li li a:hover, nav .menu li li a:active, nav .menu li li a:focus { color: #333; background: #f5f5f5e;}
 
 /************** SIDEBAR NAVIGATION ****************/
@@ -126,7 +126,7 @@ nav .menu {clear: both; margin: 0; padding: 0; background: #FBFAFC; border-top: 
 
 /************** POSTS - General ****************/
 .p_thumb{/*padding:5px 20px 10px 20px;*/margin:0 0 15px 0;}
-   .p_thumb .meta{font-size:11px;}
+   .p_thumb .meta{font-size:.85em;}
    .p_thumb .moretag{padding:0 .5em;}  
    .post-thumbnail .wp-post-image{width:78px;height:auto;}
    
@@ -153,8 +153,8 @@ nav .menu {clear: both; margin: 0; padding: 0; background: #FBFAFC; border-top: 
 
 
 /************** FOOTER ****************/
-footer{clear:both;overflow:hidden;font-size:13px;margin:40px 0 0 0;color:#444;background:#fff;border-top:1px solid #DEDEDE;}
-   footer h2{font-size:20px;font-weight:bold;text-transform:uppercase;margin:0;padding:30px 0;color:#2b2b2b;}
+footer{clear:both;overflow:hidden;font-size:.9em;margin:40px 0 0 0;color:#444;background:#fff;border-top:1px solid #DEDEDE;}
+   footer h2{font-size:1.5em;font-weight:bold;text-transform:uppercase;margin:0;padding:30px 0;color:#2b2b2b;}
    footer ul{list-style:none;margin:0;}
    #footer-copy{clear:both;margin:20px 0 0 0;background:#262626;border-top:1px solid #2E2E2E;overflow:hidden;}
    #footer-copy p{padding:15px 0;}
