@@ -5,67 +5,42 @@ Author: Erika Balode
 Author URI: http://columba.me
 */
 
+@import url(grid.css);
+
 /************** RESET http://meyerweb.com/eric/tools/css/reset/ ****************/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 blockquote, q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+* {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 /************** STRUCTURE ****************/
-html{}
-body{font-family:'Open Sans',Helvetica,'Trebuchet MS',sans-serif;font-size:14px;line-height:1.45;color:#646464;background:#f3f3f3;}
+html{overflow-y:scroll;}
+body{font-family:'Open Sans',Helvetica,'Trebuchet MS',sans-serif;font-size:.9em;line-height:1.45;color:#646464;background:#f3f3f3;}
 .wrap{}
 
-/************** RESPONSIVE 12 COLUMN GRID ****************/
-.container12{margin:0 auto;padding:0;position:relative;width:1140px;}
-.row {margin-bottom:20px;}
-.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12{display:inline;float:left;margin-left:20px;margin-right:20px;}
-.container12 .alpha{margin-left:0}.container12 .omega{margin-right:0}.container12 .column1{width:55px}.container12 .column2{width:150px}.container12 .column3{width:245px}.container12 .column4{width:340px}.container12 .column5{width:435px}.container12 .column6{width:530px}.container12 .column7{width:625px}.container12 .column8{width:720px}.container12 .column9{width:815px}.container12 .column10{width:910px}.container12 .column11{width:1005px}.container12 .column12{width:1100px}
-
 /************** TYPOGRAPHY ****************/
-h1,h2,h3,h4,h5,h6{font-weight:400;color:#000;padding:0 0 10px 0;}
-   h1{font-size:32px;line-height:1.2;color:#000;}
-   h2{font-size:24px;line-height:1.2;}
-   h3{font-size:20px;line-height:1.2;}
-   h4{font-size:14px;line-height:20px;padding:0;}
-   h5{font-size:14px;line-height:20px;}
-   h6{font-size:12px;line-height:20px;}	
-p{padding:0 0 10px 0;}
-   .lead{font-weight:bold;}
-   .text-left{text-align:left;}
-   .text-center{text-align: center;}
-   .text-right{text-align:right;}
-   .muted{color:#999;}
-   .text-warning{color:#c09853;}
-   .text-error{color:#b94a48;}
-   .text-info{color:#3a87ad;}
-   .text-success{color:#468847;}
-strong,b{font-weight:bold;}
-em,i{font-style:italic;}
-small{font-size:12px;}
-abbr{border-bottom:1px dotted #ccc;cursor:help;}
-blockquote{font-style:italic;margin:0 0 10px 0;padding-left:15px;border-left:5px solid #eee;overflow:hidden;}
-   blockquote.pull-right{float:right;padding-right:15px;padding-left:0;border-left:0;border-right:5px solid #eee;}
-   blockquote footer{font-style:normal;font-size:13px;text-align:right;color:#666;}
-   blockquote small{float:right;font-style:normal;color:#666;}
-   blockquote.pull-right small{float:none;}
-  
-q{}
-cite{}
-
-sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;}
-sup{top:-0.5em;}
-sub{bottom:-0.25em;}
+h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.2;color:#3a285a}
+h1{font-size:2.5em;font-weight:400;padding:.5em 0 .3em}
+header h1{font-family:'Pinyon Script', cursive;padding:20px 10px 10px}
+h2{font-family:Playball, cursive;font-size:1.7em;font-weight:400;padding:.6em 0 .4em}
+h3{font-size:1.2em;font-weight:600;padding:.6em 0}
+h3 span{color:#646464}
+h4,h5,h6{font-size:1.1em;font-weight:600;padding:1.2em 0}
+p{padding:0 0 1em}
+strong,b{font-weight:700;color:#3e3e55}
+em,i{font-style:italic}
+blockquote{font-style:italic;padding-left:15px;border-left:5px solid #eee;overflow:hidden;margin:0 0 10px}
 
 /************** LISTS ****************/
-ol,ul,dl{margin:0 0 10px 20px;}
-ul.unstyled,ol.unstyled {margin-left:0;list-style:none;}
-ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
-dl{margin-left:0;}
-   dt, dd{line-height:20px;}
-   dt{font-weight:bold;}
-   dd{margin-left:10px;}
-   .dl-horizontal dd{margin-left:0;}
+ol,ul,dl{list-style:none;margin:0 0 15px}
+header ul{margin:0}
+li{padding:.5em 0}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0}
+dl{margin-left:0}
+dt,dd{line-height:20px}
+dt{font-weight:700}
+dd{margin-left:10px}
 
 /************** ADDRESS ****************/
 address{font-style:normal;line-height:20px;margin-bottom:20px;}
