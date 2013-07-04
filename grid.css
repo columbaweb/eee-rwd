@@ -1,0 +1,39 @@
+/************** RESPONSIVE 12 COLUMN GRID ****************/
+.container12{margin:0 auto;padding:0;position:relative;width:1140px;}
+.row {margin-bottom:20px;}
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12{display:inline;float:left;margin-left:20px;margin-right:20px;}
+.container12 .alpha{margin-left:0}.container12 .omega{margin-right:0}.container12 .column1{width:55px}.container12 .column2{width:150px}.container12 .column3{width:245px}.container12 .column4{width:340px}.container12 .column5{width:435px}.container12 .column6{width:530px}.container12 .column7{width:625px}.container12 .column8{width:720px}.container12 .column9{width:815px}.container12 .column10{width:910px}.container12 .column11{width:1005px}.container12 .column12{width:1100px}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1160px) {
+    .container12 {width:960px;}.container12 .column1 {width:40px;}.container12 .column2 {width:120px;}.container12 .column3 {width:200px;}.container12 .column4 {width:280px;}.container12 .column5 {width:360px;}.container12 .column6 {width:440px;}.container12 .column7 {width:520px;}.container12 .column8 {width:600px;}.container12 .column9 {width:680px;}.container12 .column10 {width:760px;}.container12 .column11 {width:840px;}.container12 .column12 {width:920px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+   .container12{width:768px}
+   .container12 .column1{width:24px}.container12 .column2{width:88px}.container12 .column3{width:152px}.container12 .column4{width:216px}.container12 .column5{width:280px}.container12 .column6{width:344px}.container12 .column7{width:408px}.container12 .column8{width:472px}.container12 .column9{width:536px}.container12 .column10{width:600px}.container12 .column11{width:664px}.container12 .column12{width:728px;} 
+   nav .menu a {padding:10px 8px;}
+}
+
+@media only screen and (max-width: 767px) {
+   .container12{width:300px;}
+   .container12 .column1,.container12 .column2,.container12 .column3,.container12 .column4,.container12 .column5,.container12 .column6,.container12 .column7,.container12 .column8,.container12 .column9,.container12 .column10,.container12 .column11,.container12 .column12{margin:0 0 20px 0;width:300px;}
+    .row {margin:0;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container12{width:440px;}
+    .container12 .column1,.container12 .column2, .container12 .column3,.container12 .column4,.container12 .column5,.container12 .column6,.container12 .column7,.container12 .column8,.container12 .column9,.container12 .column10,.container12 .column11,.container12 .column12 { margin:0 0 20px 0;width:440px;}
+    .row {margin:0;}
+}
+
+/* Clear FIX */
+.clearfix:before, .clearfix:after, .row:before, .row:after, .container12:before, .container12:after {content:'.';display:block;height:0;overflow:hidden;visibility:hidden;width:0;}
+
+.clear {clear:both;display:block;height:0;overflow:hidden;visibility:hidden;width:0;}
+
+.row:after, .clearfix:after, .container12:after, .container16:after {clear:both;}
+
+.row, .clearfix {zoom: 1;}
+img, object, embed {max-width:100%;}
+img {height:auto;}
