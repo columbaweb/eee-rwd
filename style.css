@@ -220,33 +220,77 @@ input, textarea { font-family: 'Open Sans', Helvetica, 'Trebuchet MS', sans-seri
 
 /************** RESPONSIVE MENU ****************/
 
-@media screen and (min-width: 1160px) {
-   #nav .column10 a{font-size:18px;}
-} 
-
 @media screen and (min-width: 767px) {
-   .js #megaMenu{position:relative;max-height:none;}
-   #nav-toggle {display:none;}    
+   .js  #nav {
+      position: relative;
+      max-height: none;
+   }
+   #nav-toggle {
+      display: none;
+   }    
 }
 
 /************** RESPONSIVE LAYOUT ****************/
 
-@media only screen and (min-width: 960px) and (max-width: 1160px) {
-   /* Navigation */
-	nav .menu a { padding: 10px; }
-    
+/************** RESPONSIVE MENU ****************/
+@media screen and (min-width: 767px) {
+   .js  #nav {
+      position: relative;
+      max-height: none;
+   }
+   #nav-toggle {
+      display: none;
+   }    
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+/************** RESPONSIVE LAYOUT ****************/
+@media only screen and (min-width: 960px) and (max-width: 1160px) {
+  nav .menu a{padding:10px}
+  article.post h1{font-size:2.5em}
+}
 
-    
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+   nav .menu a{font-size:.9em;padding:10px}
+   article.post h1{font-size:2.3em}
+   #menu-footnav{padding:10px 0 0}
+   #menu-footnav a{display:block;font-size:.95em;padding:2px 0 2px 10px}
 }
 
 @media only screen and (max-width: 767px) {
-
-
+   header,header .column6,header .column12{margin:0!important;padding:0!important}
+   header{position:relative;overflow:visible}
+   header h1{border-bottom:1px solid #eee;padding:15px 0}
+   header h1 a{width:80px;height:80px;background:#fff url(images/mm-logo-small.jpg) top left no-repeat;margin:0 auto}
+   header #social-links{display:none}
+   header p.phone{text-align:left;position:absolute;top:120px;left:0;padding:0}
+   header p.phone strong{font-size:1.05em;padding:0 0 0 .2em}
+   .js #nav{clip:rect(0000);max-height:0;position:absolute;display:block;overflow:hidden;zoom:1}
+   #nav-toggle{float:right;width:40px;height:40px;text-indent:-9999px;background:#ddd url(images/responsive-nav.gif) center center no-repeat;overflow:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}
+   #nav li ul{position:relative}
+   #nav.opened{max-height:9999px!important}
+   nav .menu ul{visibility:visible}
+   #slider{border-top:1px solid #eee;margin:0 0 20px;padding:15px 0 0}
+   .slide-content h1{font-size:1.5em}
+   p#banner{font-size:1.4em;margin:0}
+   #banner-title{width:100%;top:0;right:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0 15px}
+   #banner-title h1{font-size:1.8em}
+   #banner-title p{font-size:1.33em;padding-bottom:12px}
+   article.post h1{font-size:2em}
+   article iframe{height:300px}
+   footer p{font-size:.85em;border-bottom:1px solid #eee;padding:10px 0}
+   #menu-footnav{float:none}
+   #menu-footnav a{display:block;font-size:.85em;padding:2px 15px 2px 0}
+   #services a.post-thumbnail{width:97%;margin-left:3px}
+   #nav li,.one_half{width:100%}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  
+   nav .menu ul{visibility:visible}
+   p#banner{font-size:2em}
+   #banner-title{width:100%;top:0;right:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0 15px}
+   #banner-title h1{font-size:3em}
+   #banner-title p{font-size:2em;padding-bottom:18px}
+   .category-blog #banner-title p{font-size:1.7em;padding-bottom:25px}
+   .post-thumbnail{width:100%}
+   .post-thumbnail img{width:100%;height:auto}
 }
