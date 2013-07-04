@@ -18,7 +18,7 @@
    
  <div id="footer-copy">
       <div class="wrap container12">
-         <p class="column6">© Copyright <?php echo date('Y'); ?> Reynolds Digital Ltd. All Rights Reserved</p>
+         <p class="column6">© Copyright <?php echo date('Y'); ?> <a href="<?php echo home_url(); ?>" ><?php bloginfo('name'); ?></a> | <span>Web Design by <a href="http://columba.me/" target="_blank">columba</a></span></p>
          <div class="column6">
             <?php wp_nav_menu( array( 'theme_location' => 'footnav' ) ); ?>
          </div>
