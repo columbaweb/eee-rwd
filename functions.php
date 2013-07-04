@@ -1,8 +1,21 @@
 <?php
 
-@define( 'PARENT_DIR', get_template_directory() );
+include 'lib/post-types.php';
+include 'lib/metabox.php';
+include 'lib/shortcodes.php';
 
-require_once (PARENT_DIR . '/shortcodes.php');
+# Saftey first
+if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER['SCRIPT_FILENAME']))
+die ('Please do not load this page directly!');
+
+# Clean up the <head>
+function removeHeadLinks()
+{
+   remove_action('wp_head', 'rsd_link');
+   remove_action('wp_head', 'wlwmanifest_link');
+   remove_action('wp_head', 'wp_generator');
+}
+add_action('init', 'removeHeadLinks');
 
 # Register Sidebars
 if ( function_exists('register_sidebar') )
@@ -10,19 +23,6 @@ if ( function_exists('register_sidebar') )
     register_sidebar(array('name' => 'Footer 1','before_widget' => '<div id="%1$s" class="box %2$s">','after_widget' => '</div>',));
     register_sidebar(array('name' => 'Footer 2','before_widget' => '<div id="%1$s" class="box %2$s">','after_widget' => '</div>',));
     register_sidebar(array('name' => 'Footer 3','before_widget' => '<div id="%1$s" class="box %2$s">','after_widget' => '</div>',));
-
-register_post_type('services', array(
-	'label' => 'Services',
-	'public' => true,
-	'show_ui' => true,
-	'capability_type' => 'post',
-	'hierarchical' => true,
-	'rewrite' => array('slug' => 'services'),
-	'query_var' => true,
-	'supports' => array('title', 'editor', 'excerpt', 'thumbnail')
-	) );
-
-	add_theme_support('post-thumbnails', array( 'post', 'page', services ) );
 
 function register_my_menus() {
   register_nav_menus(
@@ -100,30 +100,6 @@ function wp_pagination()
     ));
 }
 
-if (!function_exists('get_image_path'))  {
-function get_image_path() {
-	global $post;
-	$id = get_post_thumbnail_id();
-	// check to see if NextGen Gallery is present
-	if(stripos($id,'ngg-') !== false && class_exists('nggdb')){
-	$nggImage = nggdb::find_image(str_replace('ngg-','',$id));
-	$thumbnail = array(
-	$nggImage->imageURL,
-	$nggImage->width,
-	$nggImage->height
-	);
-	// otherwise, just get the wp thumbnail
-	} else {
-	$thumbnail = wp_get_attachment_image_src($id,'full', true);
-	}
-	$theimage = $thumbnail[0];
-	return $theimage;
-}
-}
-
-
 remove_filter('term_description','wpautop');
-
-class WPMUDEV_Update_Notifications {}
 
 ?>
