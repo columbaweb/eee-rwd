@@ -37,11 +37,9 @@
    });
 </script>
 
-
-
 <!-- Put this right before the </body> closing tag -->
 <script>
-   var navigation = responsiveNav("#megaMenu", { // Selector: The ID of the wrapper
+   var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
   animate: true, // Boolean: Use CSS3 transitions, true or false
   transition: 400, // Integer: Speed of the transition, in milliseconds
   label: "Menu", // String: Label for the navigation toggle

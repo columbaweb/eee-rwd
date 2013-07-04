@@ -59,9 +59,11 @@
       </div>    
    </header>
 
+<!-- content wrap begins -->
+<div class="wrap container12"> 
+
 <!-- main navigation -->
    <nav class="column12" id="nav" role="navigation"> 
-		<?php wp_nav_menu( array('theme_location' => 'topnav')); ?>
-	</nav>
+	<?php wp_nav_menu( array('theme_location' => 'topnav')); ?>
+   </nav>
    
-   <div class="wrap container12"> <!-- content wrap begins -->
